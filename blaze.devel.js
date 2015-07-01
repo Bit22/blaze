@@ -1241,7 +1241,7 @@ module = {exports:{}};
   }
 
   gju.pointInBoundingBox = function (point, bounds) {
-    return !(point.coordinates[1] < bounds[0][0] || point.coordinates[1] > bounds[1][0] || point.coordinates[0] < bounds[0][1] || point.coordinates[0] > bounds[1][1]) 
+    return !(point.coordinates[1] < bounds[0][0] || point.coordinates[1] > bounds[1][0] || point.coordinates[0] < bounds[0][1] || point.coordinates[0] > bounds[1][1])
   }
 
   // Point in Polygon
@@ -28260,7 +28260,7 @@ $("script[type='text/spacebars']").each(function (index, script) {
 
 $(document).ready(function () {
   if (Template.main) {
-    UI.insert(UI.render(Template.main), document.body);
+    UI.insert(UI.render(Template.main), $("script[type='text/spacebars'][name='main']").parent()[0]);
   }
 });
 

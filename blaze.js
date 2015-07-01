@@ -17,7 +17,7 @@ if("string"!=typeof t)throw new Error("HTML.EmitCode must be constructed with a 
 
 $(document).ready(function () {
   if (Template.main) {
-    UI.insert(UI.render(Template.main), document.body);
+    UI.insert(UI.render(Template.main), $("script[type='text/spacebars'][name='main']").parent()[0]);
   }
 });
 
